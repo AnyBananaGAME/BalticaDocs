@@ -1,0 +1,173 @@
+/**
+ * SanctumTerra Global Styles
+ * Clean black/gray theme for documentation
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #e0e0e0;
+  --ifm-color-primary-darker: #d0d0d0;
+  --ifm-color-primary-darkest: #b0b0b0;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  
+  /* Custom Baltica colors */
+  --baltica-black: #000000;
+  --baltica-dark: #111111;
+  --baltica-gray: #1a1a1a;
+  --baltica-light-gray: #2a2a2a;
+  --baltica-border: #404040;
+  
+  /* Typography */
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  --ifm-font-weight-bold: 600;
+  
+  /* Spacing and layout */
+  --ifm-navbar-height: 70px;
+  --ifm-navbar-padding-vertical: 0.75rem;
+  
+  /* Background colors */
+  --ifm-background-color: var(--baltica-black);
+  --ifm-background-surface-color: var(--baltica-dark);
+}
+
+/* Light theme */
+[data-theme='light'] {
+  --ifm-color-primary: #1a1a1a;
+  --ifm-color-primary-dark: #0a0a0a;
+  --ifm-color-primary-darker: #000000;
+  --ifm-color-primary-darkest: #000000;
+  --ifm-color-primary-light: #2a2a2a;
+  --ifm-color-primary-lighter: #3a3a3a;
+  --ifm-color-primary-lightest: #4a4a4a;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  
+  --ifm-background-color: #ffffff;
+  --ifm-background-surface-color: #f8f9fa;
+}
+
+/* Dark theme */
+[data-theme='dark'] {
+  --ifm-color-primary: #ffffff;
+  --ifm-color-primary-dark: #e0e0e0;
+  --ifm-color-primary-darker: #d0d0d0;
+  --ifm-color-primary-darkest: #b0b0b0;
+  --ifm-color-primary-light: #ffffff;
+  --ifm-color-primary-lighter: #ffffff;
+  --ifm-color-primary-lightest: #ffffff;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
+  
+  --ifm-background-color: var(--baltica-black);
+  --ifm-background-surface-color: var(--baltica-dark);
+}
+
+/* Global font loading */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Custom navbar styling */
+.navbar {
+  background: var(--baltica-black);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--baltica-light-gray);
+}
+
+[data-theme='light'] .navbar {
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.navbar__brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.navbar__title {
+  color: #ffffff;
+}
+
+[data-theme='light'] .navbar__title {
+  color: #1a1a1a;
+}
+
+/* Custom button styles */
+.button--primary {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #000000 !important;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.button--primary:hover {
+  background: transparent;
+  color: #ffffff !important;
+  transform: translateY(-2px);
+}
+
+[data-theme='light'] .button--primary {
+  background: #1a1a1a;
+  border-color: #1a1a1a;
+  color: #ffffff !important;
+}
+
+[data-theme='light'] .button--primary:hover {
+  background: transparent;
+  color: #1a1a1a !important;
+}
+
+/* Custom footer */
+.footer {
+  background: var(--baltica-dark);
+  border-top: 1px solid var(--baltica-light-gray);
+}
+
+[data-theme='light'] .footer {
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar for dark theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-background-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #606060;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+}
+
+[data-theme='light'] ::-webkit-scrollbar-thumb:hover {
+  background: #a0a0a0;
+}
+
+/* Ensure proper text colors */
+[data-theme='dark'] {
+  color: #ffffff;
+}
+
+[data-theme='light'] {
+  color: #1a1a1a;
+}
