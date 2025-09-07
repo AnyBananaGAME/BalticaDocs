@@ -15,16 +15,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  // url: "https://github.com/AnyBananaGAME.github.io/BalticaDocs/",
+  url: 'https://anybananaGAME.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  url: 'https://github.com/',
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/BalticaDocs/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'bonanoo', // Usually your GitHub org/user name.
-  projectName: 'balticadocs', // Usually your repo name.
+  organizationName: 'AnyBananaGAME', // Usually your GitHub org/user name.
+  projectName: 'BalticaDocs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
@@ -91,8 +90,8 @@ const config: Config = {
               to: '/docs/intro',
             },
             {
-              label: 'Tutorials',
-              to: '/docs/tutorial-basics/create-a-document',
+              label: 'Client Tutorial',
+              to: '/docs/category/tutorial---client',
             },
           ],
         },
@@ -102,15 +101,6 @@ const config: Config = {
             {
               label: 'GitHub',
               href: 'https://github.com/SanctumTerra/Baltica',
-            },
-          ],
-        },
-        {
-          title: 'Resources',
-          items: [
-            {
-              label: 'Examples',
-              to: '/docs/tutorial-extras/manage-docs-versions',
             },
           ],
         },

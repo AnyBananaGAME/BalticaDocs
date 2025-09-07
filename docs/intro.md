@@ -47,9 +47,7 @@ Ready to get started? Check out our tutorials:
 
 - **[Creating Your First Client](./tutorial-client/client-creation)** - Learn how to create a basic Minecraft bot
 - **[Event Handling](./tutorial-client/event-handling)** - Listen and respond to game events  
-- **[Sending Commands](./tutorial-client/sending-commands)** - Make your client interact with the server
-- **[Setting Up a Server](./tutorial-basics/create-a-page)** - Get a bare bones server running
-- **[Using the Bridge](./tutorial-extras/manage-docs-versions)** - Set up packet interception
+- **[Sending Packets](./tutorial-client/sending-packets)** - Make your client interact with the server
 
 ## Community
 
